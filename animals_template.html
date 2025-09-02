@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Animal Repository</title>
+    <style>
+        /* Grundlayout */
+        body {
+            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffe9e9;
+            margin: 0;
+            padding: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: normal;
+            margin-bottom: 2rem;
+        }
+
+        /* Karten-Layout */
+        ul.cards {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cards__item {
+            background-color: #fff;
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+            overflow: hidden;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .card__title {
+            color: #696969;
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .card__text {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .card__text ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card__text li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Animal Repository</h1>
+
+    <ul class="cards">
+        {{ANIMALS}}
+    </ul>
+</body>
+</html>
